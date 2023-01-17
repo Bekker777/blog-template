@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header flex-center fixed-top">
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-menu__link">Home</a></li>
+                <li><a href="" class="nav-menu__link nav-menu__link_active">Contacts</a></li>
+            </ul>
+        </nav>
+        <form class="form-search">
+            <input type="search" name="search" placeholder="Search what do you want" class="form-search__search">
+            <button class="btn btn-light">Search</button>
+        </form>
+    </header>
+    <div class="container d-flex flex-column justify-content-between min-vh-100 pt-90 m-auto">
+        <form action="" class="text-cyan form-contacts m-auto">
+            <h1 class="text-center mb-20">Заполните форму</h1>
+            <div class="form-contacts__data mb-20">
+                <input type="text" name="user_name" placeholder="Ваше имя" required class="b-rad-15">
+                <input type="number" name="user_age" placeholder="Ваш возраст" min="18" max="100" class="b-rad-15">
+                <input type="email" name="user_email" placeholder="Ваша почта" required class="b-rad-15"> 
+                <input type="password" name="user_password" placeholder="Ваш пароль" required class="b-rad-15">
+            </div>
+            <div class="mb-20">
+                <label for="">Выберите любимый цвет автомобиля</label>
+                <br>
+                <input type="color" name="" id="">
+            </div>
+            <div class="mb-20">
+                <label for="">Когда вы преобрели первый автомобиль?</label>
+                <br>
+                <input type="date" name="" id="">
+            </div>
+            <div class="mb-20">
+                <label for="">Выберите фото вашего автомобиля</label>
+                <br>
+                <input type="file" name="" id="">
+            </div>
+            <div class="mb-20">
+                <b>Выберите любимые марки автомобиля</b>
+                <br>
+                <label for="car_toyota">Toyota</label>
+                <input type="checkbox" name="car" id="car_toyota" value="Toyota">
+                <label for="car_nissan">Nissan</label>
+                <input type="checkbox" name="car" id="car_nissan" value="Nissan">
+                <label for="car_chevrolet">Chevrolet</label>
+                <input type="checkbox" name="car" id="car_chevrolet" value="Chevrolet">
+                <br>
+            </div>
+            <div class="mb-20">
+                <b>Выберите тип автомобиля</b>
+                <br>
+                <label for="type_autoroad">Внедорожник</label>
+                <input type="radio" name="type" id="type_autoroad" value="Внедорожник" checked>
+                <label for="type_racing">Гоночная</label>
+                <input type="radio" name="type" id="type_racing" value="Гоночная">
+                <label for="type_drift">Дрифт</label>
+                <input type="radio" name="type" id="type_drift" value="Дрифт">
+                <br>
+            </div>
+            <div class="mb-20">
+                <textarea name="comments" placeholder="Напишите о себе" class="form-contacts__comments b-rad-15"></textarea>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-success">Отправить</button>
+                <button type="reset" class="btn btn-danger">Очистить</button>
+            </div>
+        </form>
+        <footer class="footer flex-center">
+            <p><a href="" class="text-cyan">Тех-поддержка</a></p>
+        </footer>
+    </div>
+
+</body>
+</html>

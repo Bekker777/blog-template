@@ -5,67 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Blog</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body{
-            background-image: url("./images/black.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-        }
-
-        ol, ul{
-            list-style: none;
-        }
-
-        a{
-            text-decoration: none;
-        }
-
-        .container {
-            width: 1100px;
-            margin: 0 auto;
-        }
-
-        .post {
-            border-bottom: 1px solid rgb(255, 0, 0);
-            padding-bottom: 20px;
-            margin-bottom: 50px;
-            color: rgb(255, 0, 0);
-        }
-
-        .post__title {
-            text-align: center;
-            font-size: 50px;
-        }
-
-        .post__img {
-            width: 100%;
-        }
-
-        .post__content {
-            text-align: justify;
-            line-height: 170%;
-        }
-    </style>
 </head>
-
 <body>
-    <header>
+    <header class="header flex-center fixed-top">
         <nav>
-            <ul class="menu">
-                <li><a href="">Home</a></li>
-                <li><a href="./tags/tags.html">Tags</a></li>
-                <li><a href="">Contacts</a></li>
+            <ul class="nav-menu">
+                <li><a href="" class="nav-menu__link nav-menu__link_active">Home</a></li>
+                <li><a href="./contacts/contacts.html" class="nav-menu__link">Contacts</a></li>
             </ul>
         </nav>
+        <form class="form-search">
+            <input type="search" name="search" placeholder="Search what do you want" class="form-search__search">
+            <button class="btn btn-light">Search</button>
+        </form>
     </header>
-    <div class="container">
+    <div class="container d-flex flex-column justify-content-between min-vh-100 pt-90 m-auto">
         <article>
             <div class="post">
                 <h3 class="post__title">Lamborghini</h3>
@@ -99,6 +55,9 @@
                 </p>
             </div>
         </article>
+        <footer class="footer flex-center">
+            <p><a href="" class="text-cyan">Тех-поддержка</a></p>
+        </footer>
     </div>
 
 </body>
